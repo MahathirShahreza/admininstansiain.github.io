@@ -1164,6 +1164,19 @@ h6 {
   padding: 12px 15px;
 }
 
+.contact .php-email-form button[type=view] {
+  background: #ffe600;
+  border: 0;
+  padding: 10px 30px;
+  color: #fff;
+  transition: 0.4s;
+  border-radius: 4px;
+
+}
+
+.contact .php-email-form button[type=view]:hover {
+  background: #2bff00;
+}
 .contact .php-email-form button[type=submit] {
   background: #4154f1;
   border: 0;
@@ -1174,9 +1187,8 @@ h6 {
 }
 
 .contact .php-email-form button[type=submit]:hover {
-  background: #5969f3;
+  background: #ff0303;
 }
-
 @keyframes animate-loading {
   0% {
     transform: rotate(0deg);
@@ -1245,4 +1257,44 @@ h6 {
   text-align: center;
   font-size: 13px;
   color: #012970;
+}
+
+
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 500px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  position: relative;
+}
+
+/* The Close Button */
+.close-button {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  cursor: pointer;
+}
+
+.close-button:hover,
+.close-button:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-content p {
+  font-size: 18px;
+  color: #333;
 }
